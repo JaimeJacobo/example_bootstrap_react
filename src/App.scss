@@ -1,0 +1,31 @@
+$colorPrincipalDeLaPagina: rgb(178,34,34);
+$smallScreen: 500px;
+
+body {
+  background-color: coral;
+
+  @media only screen and (max-width: $smallScreen){
+    background-color: $colorPrincipalDeLaPagina;
+  }
+}
+
+.App {
+  & h1{
+    text-align: center;
+  }
+
+  & h2{
+    text-align: left;
+  }
+
+  & .flexCentered {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+
+
+
+
